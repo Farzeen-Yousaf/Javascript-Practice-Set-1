@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice Set</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+">
+    <!-- Custom CSS -->
+    <style>
+        .buttons .btn {
+            margin-bottom: 8px;
+            min-width: 45%;
+        }
+    </style> 
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold">Javascript Practice</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+    </header>
+    <main style="flex:1 0 auto;">
+        <div class="py-4">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <h4  class="text-center">Input</h4>
+                        <div class="border border-dark rounded-3 p-4 d-flex align-items-center" style="height: 122px;">
+                            <div class="input-group " >
+                                <input type="text" id="input" class="form-control form-control-md" placeholder="Type here">
+                                <button  class="btn btn-outline-success " onclick="clearInputField()">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4 class="text-center">Input</h4>
+                        <div class="border rounded-3 p-4 bg-dark orignalStringInput">
+                            <div id="originalTextBox" class=" text-center text-white">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2 mt-md-3">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <h4 class="text-center">Buttons</h4>
+                        <div class="border border-dark rounded-3 text-center buttons p-2">
+                            <button class="btn btn-danger" onclick = "lowerCase()">Covert to LowerCase</button>
+                            <button class="btn btn-danger" onclick="upperCase()">Covert to UpperCase</button>
+                            <button class="btn btn-danger" onclick="capitalize()">Covert to Capitalize</button>
+                            <button class="btn btn-danger" onclick="betterFormating()">Better Formattng</button>
+                            <button class="btn btn-danger" onclick="printAllCties()">Print All Cities</button>
+                            <button class="btn btn-danger" onclick="addCity()">Add your city in list</button>
+                            <button class="btn btn-danger" onclick="checkYourCity()">Check your city in list</button>
+                            <button class="btn btn-danger" onclick="findWord()">Find this word</button>
+                            <button class="btn btn-danger" onclick="replaceWith()">Replace this word</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h4  class="text-center">Output</h4>
+                        <div class="border border-dark rounded-3 text-center buttons p-2" style="height: 248px;">
+                            <div id="output" onclick = "showOutput()" ></div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-3" id="clearOutputButton" onclick="clearOutput() ">Clear Output</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="py-2 bg-dark">
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+                    <p class="text-white text-center mb-0">&copy; 2023. All Rights Reserved <a
+                            class="text-white fw-bold"
+                            href="https://mail.google.com/mail/u/0/#inbox">Farzeenyousaf98@gmal.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
